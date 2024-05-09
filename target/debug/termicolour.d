@@ -1,0 +1,1 @@
+C:\Users\Darrel\Desktop\Rust\termicolour\target\debug\termicolour.exe: C:\Users\Darrel\Desktop\Rust\termicolour\src\colours\BrightColour.rs C:\Users\Darrel\Desktop\Rust\termicolour\src\colours\Colour16.rs C:\Users\Darrel\Desktop\Rust\termicolour\src\colours.rs C:\Users\Darrel\Desktop\Rust\termicolour\src\lib.rs C:\Users\Darrel\Desktop\Rust\termicolour\src\main.rs
