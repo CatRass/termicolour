@@ -1,7 +1,8 @@
-use termicolour::{colour_print, colour_print_bright, print_styled, Styles};
+use termicolour::*;
 
-use termicolour::colours::Colour16;
-use termicolour::colours::BrightColour;
+// use termicolour::{colour_print, colour_print_bright, print_styled, Styles};
+// use termicolour::Colour8;
+// use termicolour::BrightColour;
 
 fn main() {
     test_print();
@@ -14,26 +15,26 @@ fn test_print() {
     print_styled("Underlined Text",Styles::Underlined);
 
     println!("\n=== 8-Bit Text Colours ===");
-    colour_print!( "Black Text",Colour16::Colours::Black);
-    colour_print!( "Red Text",Colour16::Colours::Red);
-    colour_print!( "Gren Text",Colour16::Colours::Green);
-    colour_print!( "Yellow Text",Colour16::Colours::Yellow);
-    colour_print!( "Blue Text",Colour16::Colours::Blue);
-    colour_print!( "Magenta Text",Colour16::Colours::Magenta);
-    colour_print!( "Cyan Text",Colour16::Colours::Cyan);
-    colour_print!( "White Text",Colour16::Colours::White);
-    colour_print!( "Default Text",Colour16::Colours::Default);
+    colour_print!( "Black Text",Colour8::Colours::Black);
+    colour_print!( "Red Text",Colour8::Colours::Red);
+    colour_print!( "Gren Text",Colour8::Colours::Green);
+    colour_print!( "Yellow Text",Colour8::Colours::Yellow);
+    colour_print!( "Blue Text",Colour8::Colours::Blue);
+    colour_print!( "Magenta Text",Colour8::Colours::Magenta);
+    colour_print!( "Cyan Text",Colour8::Colours::Cyan);
+    colour_print!( "White Text",Colour8::Colours::White);
+    colour_print!( "Default Text",Colour8::Colours::Default);
 
     println!("\n=== 8-Bit Background Colours ===");
-    colour_print!( "Black Background", Colour16::Colours::Black, true);
-    colour_print!( "Red Background", Colour16::Colours::Red, true);
-    colour_print!( "Gren Background", Colour16::Colours::Green, true);
-    colour_print!( "Yellow Background", Colour16::Colours::Yellow, true);
-    colour_print!( "Blue Background", Colour16::Colours::Blue, true);
-    colour_print!( "Magenta Background", Colour16::Colours::Magenta, true);
-    colour_print!( "Cyan Background", Colour16::Colours::Cyan, true);
-    colour_print!( "White Background", Colour16::Colours::White, true);
-    colour_print!( "Default Background", Colour16::Colours::Default, true);
+    colour_print!( "Black Background", Colour8::Colours::Black, true);
+    colour_print!( "Red Background", Colour8::Colours::Red, true);
+    colour_print!( "Gren Background", Colour8::Colours::Green, true);
+    colour_print!( "Yellow Background", Colour8::Colours::Yellow, true);
+    colour_print!( "Blue Background", Colour8::Colours::Blue, true);
+    colour_print!( "Magenta Background", Colour8::Colours::Magenta, true);
+    colour_print!( "Cyan Background", Colour8::Colours::Cyan, true);
+    colour_print!( "White Background", Colour8::Colours::White, true);
+    colour_print!( "Default Background", Colour8::Colours::Default, true);
 
     println!("\n=== Bright Text Colours ===");
     colour_print_bright!( "Black Text",BrightColour::Colours::Black);

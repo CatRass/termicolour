@@ -1,6 +1,10 @@
 use std::io::{self, Write};
 
-pub mod colours;
+// pub mod colours;
+#[allow(non_snake_case)]
+pub mod Colour8;
+#[allow(non_snake_case)]
+pub mod BrightColour;
 
 const ESC: u8       = b'\x1B';
 const END: &str     = "[0m";
@@ -41,7 +45,7 @@ pub fn print_styled(text: &str, style: Styles) -> bool {
     return true;
 }
 
-pub fn print_coloured_8bit(text: &str, colour: colours::Colour16::Colours, background:bool) -> bool {
+pub fn print_coloured_8bit(text: &str, colour: Colour8::Colours, background:bool) -> bool {
     let colour_vals = colour.getVals();
     let mut text_bytes = vec!(ESC);
     
@@ -60,7 +64,7 @@ pub fn print_coloured_8bit(text: &str, colour: colours::Colour16::Colours, backg
     return true;
 }    
 
-pub fn print_coloured_bright(text: &str, colour: colours::BrightColour::Colours, background:bool) -> bool {
+pub fn print_coloured_bright(text: &str, colour: BrightColour::Colours, background:bool) -> bool {
     let colour_vals = colour.getVals();
     let mut text_bytes = vec!(ESC);
     
